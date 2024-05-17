@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f6f5f7;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF4B2B;
+  padding: 1rem;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+}
+
+.navbar-brand a {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-menu a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-menu a:hover {
+  text-decoration: underline;
+}
+
+.dashboard-container {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* height of navbar */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  padding-top: 20px;
+  height: calc(100vh - 60px); /* adjust for navbar height */
+  position: fixed;
+  top: 60px; /* height of navbar */
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #575757;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 2rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main-content p {
+  font-size: 1rem;
+  color: #333;
+}
