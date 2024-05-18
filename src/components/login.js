@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './login.css'; // Ensure this path is correct
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
+import './login.css';
 
 const Auth = () => {
   const [rightPanelActive, setRightPanelActive] = useState(false);
@@ -19,30 +18,30 @@ const Auth = () => {
         <form action="#">
           <h1>Create Account</h1>
           <div className="social-container">
-            <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
-            <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-            <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
+            <a href="/#" className="btn btn-icon btn-primary"><i className="fab fa-facebook-f"></i></a>
+            <a href="/#" className="btn btn-icon btn-danger"><i className="fab fa-google-plus-g"></i></a>
+            <a href="/#" className="btn btn-icon btn-info"><i className="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your email for registration</span>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
+          <input type="text" placeholder="Name" className="form-control" />
+          <input type="email" placeholder="Email" className="form-control" />
+          <input type="password" placeholder="Password" className="form-control" />
+          <button type="button" className="btn btn-primary">Sign Up</button>
         </form>
       </div>
       <div className="form-container sign-in-container">
         <form action="#">
           <h1>Sign in</h1>
           <div className="social-container">
-            <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
-            <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-            <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
+            <a href="/#" className="btn btn-icon btn-primary"><i className="fab fa-facebook-f"></i></a>
+            <a href="/#" className="btn btn-icon btn-danger"><i className="fab fa-google-plus-g"></i></a>
+            <a href="/#" className="btn btn-icon btn-info"><i className="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your account</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <a href="#">Forgot your password?</a>
-          <button>Sign In</button>
+          <input type="email" placeholder="Email" className="form-control" />
+          <input type="password" placeholder="Password" className="form-control" />
+          <a href="/#">Forgot your password?</a>
+          <button type="button" className="btn btn-primary">Sign In</button>
         </form>
       </div>
       <div className="overlay-container">
@@ -50,14 +49,12 @@ const Auth = () => {
           <div className="overlay-panel overlay-left">
             <h1>Welcome Back!</h1>
             <p>To keep connected with us please login with your personal info</p>
-            <button className="ghost" id="signIn" onClick={handleSignInClick}>Sign In</button>
+            <button className="ghost btn btn-primary" id="signIn" onClick={handleSignInClick}>Sign In</button>
           </div>
           <div className="overlay-panel overlay-right">
             <h1>CartCraft</h1>
-            <p>CartCraft is your ultimate e-commerce platform that provides a seamless shopping experience.</p>
-            <p>Explore a wide range of products, manage your cart, and place orders easily.</p>
-            <p>Enter your personal details and start your journey with us.</p>
-            <button className="ghost" id="signUp" onClick={handleSignUpClick}>Sign Up</button>
+            <p>Enter your personal details and start your journey with us</p>
+            <button className="ghost btn btn-primary" id="signUp" onClick={handleSignUpClick}>Sign Up</button>
           </div>
         </div>
       </div>

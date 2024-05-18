@@ -11,12 +11,14 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h1>Welcome to CartCraft</h1>
-      <p>CartCraft is your ultimate e-commerce platform that provides a seamless shopping experience.</p>
-      <p>Explore a wide range of products, manage your cart, and place orders easily.</p>
-      <p>
-        <button onClick={handleAuthClick}>Sign in or Sign up</button> to start your shopping journey with us!
-      </p>
+      <div className="container text-center">
+        <h1 className="display-4">Welcome to CartCraft</h1>
+        <p className="lead">CartCraft is your ultimate e-commerce platform that provides a seamless shopping experience.</p>
+        <p>Explore a wide range of products, manage your cart, and place orders easily.</p>
+        <p>
+          <button className="btn btn-primary btn-lg" onClick={handleAuthClick}>Sign in or Sign up</button> to start your shopping journey with us!
+        </p>
+      </div>
     </div>
   );
 };
